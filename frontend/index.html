@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Command and Control panel</title>
+	<style type="text/css">
+		html, body {
+			background-color: #111;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="video-canvas"></canvas>
+	<canvas id="detection-canvas"></canvas>
+	<button id="lndDrone" onclick="landDrone()">LAND</button>
+	<button id="takeOffDrone" onclick="takeOffDrone()">TAKE OFF</button>
+	<script type="text/javascript" src="face-api.min.js"></script>
+	<script type="text/javascript" src="jsmpeg.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript">
+
+	</script>
+</body>
+<style>
+
+	#lndDrone{
+		position: absolute;
+		width: 90px;
+		height: 40px;
+		right: 0;
+	}
+	#takeOffDrone{
+		position: absolute;
+		width: 90px;
+		height: 40px;
+		margin-top: 60px;
+		right: 0;
+	}
+	#detection-canvas{
+		position: absolute;
+		left:0px;
+	}
+	#video-canvas{
+		position: absolute;
+		left: 0px;
+	}
+</style>
+</html>
